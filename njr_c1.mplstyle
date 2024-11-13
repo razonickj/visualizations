@@ -1,0 +1,41 @@
+# custom_style.mplstyle
+
+# Set figure size to make the plot larger
+figure.figsize: 10, 5  # Adjust width and height; width should be twice the height for x-to-y ratio of 2:1
+figure.dpi: 150
+savefig.dpi: 300
+
+# Set the aspect ratio of the axes
+#axes.aspect: auto  # Keep auto aspect to avoid forced equal scales but configure a wide figure
+
+# Change the font to Times New Roman
+font.family: serif
+font.serif: Times New Roman
+
+
+# Other optional stylistic improvements
+axes.grid: True
+grid.linestyle: --
+grid.color: d3d3d3
+
+# Customize tick parameters for better visibility
+xtick.direction: in
+ytick.direction: in
+xtick.major.size: 6
+ytick.major.size: 6
+xtick.labelsize: 12
+ytick.labelsize: 12
+
+# Set line width and marker size for better visual clarity
+# Use a colorblind-friendly color cycle (red-green colorblind safe)
+axes.prop_cycle: cycler('color', ['00FFFF', '19E6FF', '33CCFF', '4DB3FF', '6699FF', '807FFF', '9966FF', 'B34DFF', 'CC33FF', 'E619FF'])
+
+lines.linewidth: 2
+lines.markersize: 6
+
+# Increase legend font size
+legend.fontsize: 12
+
+# Title and label font sizes
+axes.titlesize: 14
+axes.labelsize: 14
